@@ -3,7 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import logoImg from "/assets/Group 1000012072.png";
+import logoImg from "../../public/assets/Group 1000012072.png";
 import { useSelector } from "react-redux";
 
 export default function Preloader() {

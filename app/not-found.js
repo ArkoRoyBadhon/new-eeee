@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import Image from 'next/image';
-import Link from 'next/link';
-import logoImg from '../public/assets/Group 1000012072.png';
+import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
+import logoImg from "../public/assets/Group 1000012072.png";
 
 export default function NotFound() {
   return (
@@ -12,13 +12,18 @@ export default function NotFound() {
       <motion.div
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
-        transition={{ type: 'spring', stiffness: 300, damping: 15 }}
+        transition={{ type: "spring", stiffness: 300, damping: 15 }}
         className="mb-8"
       >
         <div className="flex items-center bg-[#001C44] p-2 rounded-lg shadow-lg border border-[#00A3FF]/20">
           <motion.div
             animate={{ rotate: [0, 3, -3, 0] }}
-            transition={{ duration: 4, repeat: Infinity, repeatType: 'mirror', ease: "easeInOut" }}
+            transition={{
+              duration: 4,
+              repeat: Infinity,
+              repeatType: "mirror",
+              ease: "easeInOut",
+            }}
           >
             <Image
               src={logoImg}
@@ -33,7 +38,7 @@ export default function NotFound() {
 
       {/* Main Content */}
       <div className="text-center max-w-md">
-        <motion.h1 
+        <motion.h1
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.2 }}
@@ -41,7 +46,7 @@ export default function NotFound() {
         >
           404
         </motion.h1>
-        
+
         <motion.h2
           initial={{ y: -10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -50,7 +55,7 @@ export default function NotFound() {
         >
           Page Not Found
         </motion.h2>
-        
+
         <motion.p
           initial={{ y: -10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -59,14 +64,14 @@ export default function NotFound() {
         >
           The page you&apos;re looking for doesn&apos;t exist or has been moved.
         </motion.p>
-        
+
         <motion.div
           initial={{ scale: 0.9, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ delay: 0.5 }}
         >
-          <Link 
-            href="/" 
+          <Link
+            href="/"
             className="inline-block px-6 py-3 rounded-lg bg-gradient-to-r from-[#00A3FF] to-[#DFB547] text-white font-medium hover:opacity-90 transition-opacity shadow-lg cursor-pointer relative z-50"
           >
             Return Home
