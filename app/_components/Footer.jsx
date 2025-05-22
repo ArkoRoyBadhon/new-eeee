@@ -1,5 +1,5 @@
 import React from "react";
-import logoImg from "../../public/assets/Group 1000012072.png";
+import logoImg from "/assets/Group 1000012072.png";
 import playStoreImg from "../../public/assets/playstor.png";
 import appStoreImg from "../../public/assets/app.png";
 import Image from "next/image";

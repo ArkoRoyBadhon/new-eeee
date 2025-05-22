@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import { motion, AnimatePresence } from 'framer-motion';
-import { useEffect, useState } from 'react';
-import Image from 'next/image';
-import logoImg from '../../public/assets/Group 1000012072.png';
-import { useSelector } from 'react-redux';
+import { motion, AnimatePresence } from "framer-motion";
+import { useEffect, useState } from "react";
+import Image from "next/image";
+import logoImg from "/assets/Group 1000012072.png";
+import { useSelector } from "react-redux";
 
 export default function Preloader() {
   const [initialLoadComplete, setInitialLoadComplete] = useState(false);
@@ -31,7 +31,7 @@ export default function Preloader() {
   }, [initialLoadComplete, token]);
 
   useEffect(() => {
-    document.body.style.overflow = showLoader ? 'hidden' : 'auto';
+    document.body.style.overflow = showLoader ? "hidden" : "auto";
   }, [showLoader]);
 
   return (
@@ -45,15 +45,15 @@ export default function Preloader() {
         >
           <motion.div
             initial={{ scale: 0.9, opacity: 0 }}
-            animate={{ 
-              scale: 1, 
+            animate={{
+              scale: 1,
               opacity: 1,
-              transition: { 
-                type: 'spring', 
+              transition: {
+                type: "spring",
                 stiffness: 400,
                 damping: 15,
-                duration: 0.3
-              }
+                duration: 0.3,
+              },
             }}
           >
             <div className="flex items-center bg-[#001C44] p-2 rounded-lg">
@@ -62,8 +62,8 @@ export default function Preloader() {
                 transition={{
                   duration: 1.2,
                   repeat: Infinity,
-                  repeatType: 'mirror',
-                  ease: "easeInOut"
+                  repeatType: "mirror",
+                  ease: "easeInOut",
                 }}
               >
                 <Image

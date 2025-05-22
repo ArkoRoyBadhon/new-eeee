@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import logoImg from "../../public/assets/Group 1000012072.png";
+import logoImg from "/assets/Group 1000012072.png";
 import Image from "next/image";
 import Link from "next/link";
 import { CircleUser, ChevronDown, Logs, Menu } from "lucide-react";

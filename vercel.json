@@ -1,0 +1,3 @@
+{
+  "vercel-build": "npm install --force && next build"
+}

@@ -15,7 +15,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { useMediaQuery } from "@/hooks/use-media-query";
 import Image from "next/image";
-import logoImg from "../../../public/assets/Group 1000012072.png";
+import logoImg from "..//assets/Group 1000012072.png";
 import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 import { useDispatch, useSelector } from "react-redux";
